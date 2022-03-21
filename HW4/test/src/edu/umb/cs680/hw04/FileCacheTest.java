@@ -17,18 +17,6 @@ public class FileCachingTest {
         return result;
     }
 
-    @Test
-    public void FileCacheTest(){
-        FileCache fileCache = new FileCache();
-        String[] targetFiles = new String[]{"T1", "T2", "T3", "T4");
-        for(int i = 0;i < targetFiles.length; i++) {
-            fileCache.fetchTarget(targetFiles[i]);
-        }
-        String[] actual = hashmapToStringArray(fileCache.cache);
-        String[] expected = new String[]{"T1", "T2", "T3", "T4"};
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
 
     @Test
     public void FIFOFileCacheTest(){
