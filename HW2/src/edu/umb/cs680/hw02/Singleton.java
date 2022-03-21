@@ -10,8 +10,8 @@ public class Singleton {
         return instance;
     }
     public static void main(String[] args){
-	Singleton sin = Singleton.getInstance();
-	System.out.println(sin.hashCode());
+	Singleton single = Singleton.getInstance();
+	System.out.println(single.hashCode());
 	}
 	
 }

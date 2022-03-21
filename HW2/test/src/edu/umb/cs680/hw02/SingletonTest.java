@@ -7,18 +7,18 @@ import org.junit.jupiter.api.Test;
 public class SingletonTest {
 
     @Test
-    public void getinstanceforNonNullValue()
+    public void getinstanceforNonNull()
     {
-        Singleton sin = Singleton.getInstance();
-        Assertions.assertNotNull(sin);
+        Singleton single = Singleton.getInstance();
+        Assertions.assertNotNull(single);
     }
 
     @Test
-    public void getinstanceforidenticalinstancesmultipletimes()
+    public void getidenticalinstancesmultipletimes()
     {
-        Singleton sin1 = Singleton.getInstance();
-        Singleton sin2 = Singleton.getInstance();
-        Assertions.assertSame(sin1,sin2);
+        Singleton single1 = Singleton.getInstance();
+        Singleton single2 = Singleton.getInstance();
+        Assertions.assertSame(single1,single2);
     }
 
 }
